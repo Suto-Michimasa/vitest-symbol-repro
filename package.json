@@ -1,0 +1,36 @@
+{
+  "name": "vitest-symbol-repro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "test": "vitest run",
+    "test:browser": "vitest --project=browser run",
+    "test:storybook": "vitest --project=storybook run"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-vitest": "^10.1.10",
+    "@storybook/react-vite": "^10.1.10",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/browser": "4.0.16",
+    "@vitest/browser-playwright": "4.0.16",
+    "msw": "^2.12.7",
+    "msw-storybook-addon": "^2.0.6",
+    "playwright": "^1.57.0",
+    "storybook": "^10.1.10",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0",
+    "vitest": "4.0.16"
+  }
+}
