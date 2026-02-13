@@ -35,7 +35,7 @@ describe('TestComponent', () => {
     })
   })
 
-  it('handles failed connection - this causes Symbol error in vitest 4.0.16', async () => {
+  it('handles failed connection', async () => {
     server.use(
       http.get('/api/test-connection/:id', () => {
         return new HttpResponse(null, {

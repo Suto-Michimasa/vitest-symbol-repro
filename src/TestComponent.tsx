@@ -9,7 +9,6 @@ export const TestComponent = () => {
     try {
       const { error } = await testConnection({ id: '123' })
       if (error) {
-        // This console.error with error object causes Symbol serialization issue in vitest 4.0.16
         console.error('Test connection error:', error)
         setResult('failed')
       } else {
